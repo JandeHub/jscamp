@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <title> DevJobs - Inicio</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Encuentra las mejores ofertas de trabajo para desarrolladores en DevJobs."/>
+
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+
+    <body>
+        <!--Parte navegable de la pagina, donde se encuentran toda la navegacion para poder ir a otras paginas-->
+        <header>
+            <h1> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="24"      height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-code"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 8l-4 4l4 4" /><path d="M17 8l4 4l-4 4" /><path d="M14 4l-4 16" />
+                </svg>
+                DevJobs 
+            </h1>
+
+            <!--Seccion de la navegación-->
+            <nav>   
+                <a href="./search.html">Buscar</a>
+                <a href="">Empleos</a>
+                <a href="">Empresas</a>
+                <a href="">Salarios</a>   
+            </nav>
+
+            <!--Parte de los botones-->
+            <div> 
+                <a href=""> Publicar un empleo </a> 
+            </div>
+            <div> 
+                <a href=""> Iniciar Sesión </a> 
+            </div>
+
+        </header>
+
+        <!--La seccion donde se encuentra la información de la pagina, infroamción del servicio, los servicios que se ofrecen, etc..-->
+        <main>
+            <!--El main lo podemos separa por secciones con la etiqueta <section>, cada section tambien puede contener un <header> y un <footer>-->
+            <section>
+                <img src="./background.webp"/>
+
+                <h1> Encuentra el trabajo de tus sueños </h1>
+
+                <p> Únete a la comunidad más grande de desarrolladores y encuentra tu próxima oportunidad. </p>
+
+                <!--<form> es la etiqueta para crear un formulario, sirve para poder rellenar y enviar cosas a la pagina, tiene diferentes roles. Dentro de la etiqueta se utilizan etiquetas para poder crear el campo, normalmente es <input>-->
+                <form role="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+
+                    <!--La etiqueta <input> tiene diferentes tipos para cada información que necesitemos. El placeholder sirve para dar información al usuario de que sirve el input-->
+                    <input type="text" name="Buscar" placeholder="Buscar empleos por título, habilidad o empresa">
+
+                    <button type="submit"> Buscar </button>
+                </form>
+            </section>
+
+            <section>
+                <header>
+                    <h2> ¿Por qué DevJobs? </h2>
+                    <p> DevJobs es la principal bolsa de trabajo para desarrolladores. Conectamos a los desarrolladores con las mejores empresas del mundo. </p>
+                </header>
+
+                <footer>
+                    <!--La etiqueta <article> es un elemento de HTML que lo utilizan para crear un contenido indepediente y poder reutilizarlo en otro sitio-->
+                    <article>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-briefcase-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 9a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9z" /><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" /></svg>
+                        <h3> Encuentra el trabajo de tus sueños </h3>
+                        <p> Busca miles de empleos de las mejores empresas de todo el mundo. </p>
+                    </article>
+
+                    <article>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-users"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /><path d="M21 21v-2a4 4 0 0 0 -3 -3.85" /></svg>
+                        <h3> Conecta con las mejores empresas </h3>
+                        <p> Conecta con empresas que están contratando por tus habilidades. </p>
+                    </article>
+
+                    <article>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-coin-euro"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M14.401 8c-.669 -.628 -1.5 -1 -2.401 -1c-2.21 0 -4 2.239 -4 5s1.79 5 4 5c.9 0 1.731 -.372 2.4 -1" /><path d="M7 10.5h4" /><path d="M7 13.5h4" /></svg>
+                        <h3> Obtén el salario que mereces </h3>
+                        <p> Obtén el salario que mereces con nuestra calculadora de salarios. </p>
+                    </article>
+                </footer>
+            </section>
+        </main>
+
+        <footer>
+            <small>&copy; 2025 DevJobs. Todos los derechos reservados.</small>
+        </footer>
+
+    </body>
+
+</html>
